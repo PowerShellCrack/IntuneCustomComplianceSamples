@@ -1,0 +1,32 @@
+{
+"Rules":[
+    {
+       "SettingName":"ServiceName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"SCardSvr",
+       "MoreInfoUrl":"https://learn.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-smart-cards-for-windows-service",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The smartcard service must be installed",
+             "Description": "The smartcard is not installed or service has failed to install"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceStatus",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Running",
+       "MoreInfoUrl":"https://learn.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-smart-cards-for-windows-service",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The smartcard must be running. Current service state is: {ActualValue}.",
+             "Description": "The smartcard is not in the running state"
+          }
+       ]
+    }
+]
+}

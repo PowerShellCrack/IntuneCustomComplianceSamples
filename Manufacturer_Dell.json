@@ -1,0 +1,14 @@
+{ 
+       "SettingName":"Manufacturer",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Dell",
+       "MoreInfoUrl":"https://www.dell.com/support",
+       "RemediationStrings":[ 
+          { 
+             "Language":"en_US",
+             "Title":"This machine is not a Dell.",
+             "Description": "We only support Dell devices, please contact us for more information."
+          }
+       ]
+    }

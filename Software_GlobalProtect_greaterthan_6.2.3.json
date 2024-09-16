@@ -1,0 +1,32 @@
+{
+"Rules":[
+{
+       "SettingName":"AppName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"GlobalProtect",
+       "MoreInfoUrl":"https://sso.paloaltonetworks.com/",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "GlobalProtect client must be installed",
+             "Description": "GlobalProtect client is not installed"
+          }
+       ]
+    },
+    {
+       "SettingName":"AppVersion",
+       "Operator":"GreaterEquals",
+       "DataType":"Version",
+       "Operand":"6.2.3",
+       "MoreInfoUrl":"https://sso.paloaltonetworks.com/",
+       "RemediationStrings":[
+          {
+             "Language":"en_US",
+             "Title":"GlobalProtect version must be 6.2.3 or higher. Value discovered was: {ActualValue}.",
+             "Description": "GlobalProtect version must be 6.2.3 or higher. Please contact your Administrator"
+          }
+       ]
+    }
+]
+}

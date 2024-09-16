@@ -1,0 +1,60 @@
+{
+"Rules":[
+{
+       "SettingName":"AppName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Nessus Agent (x64)",
+       "MoreInfoUrl":"https://www.tenable.com/support",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "Nessus Agent must be installed",
+             "Description": "Nessus Agent is not installed"
+          }
+       ]
+    },
+    {
+       "SettingName":"AppVersion",
+       "Operator":"GreaterEquals",
+       "DataType":"Version",
+       "Operand":"10.7.2.20010",
+       "MoreInfoUrl":"https://www.tenable.com/support",
+       "RemediationStrings":[
+          {
+             "Language":"en_US",
+             "Title":"Nessus Agent version must be 10.2.0.0 or higher. Value discovered was: {ActualValue}.",
+             "Description": "Nessus Agent version must be 10.2.0.0 or higher. Please contact your Administrator"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Tenable Nessus Agent",
+       "MoreInfoUrl":"https://www.tenable.com/support",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The Tenable Agent service must be installed",
+             "Description": "Nessus Agent is not installed or service has failed to install"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceStatus",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Running",
+       "MoreInfoUrl":"https://www.tenable.com/support",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The Tenable Agent must be running. Current service state is: {ActualValue}.",
+             "Description": "The Tenable Agent is not in the running state"
+          }
+       ]
+    }
+]
+}

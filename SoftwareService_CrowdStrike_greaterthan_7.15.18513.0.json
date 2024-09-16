@@ -1,0 +1,60 @@
+{
+"Rules":[
+{
+       "SettingName":"AppName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"CrowdStrike Windows Sensor",
+       "MoreInfoUrl":"https://www.crowdstrike.com/contact-us/",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "CrowdStrike must be installed",
+             "Description": "CrowdStrike is not installed or service has failed to install"
+          }
+       ]
+    },
+    {
+       "SettingName":"AppVersion",
+       "Operator":"GreaterEquals",
+       "DataType":"Version",
+       "Operand":"7.15.18513.0",
+       "MoreInfoUrl":"https://www.crowdstrike.com/contact-us/",
+       "RemediationStrings":[
+          {
+             "Language":"en_US",
+             "Title":"CrowdStrike version must be 7.15.18513.0 or higher. Value discovered was: {ActualValue}.",
+             "Description": "CrowdStrike version must be 7.15.18513.0 or higher. Please contact your Administrator"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"CSFalconService",
+       "MoreInfoUrl":"https://www.crowdstrike.com/contact-us/",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The CrowdStrike service must be installed",
+             "Description": "CrowdStrike is not installed or service has failed to install"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceStatus",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Running",
+       "MoreInfoUrl":"https://www.crowdstrike.com/contact-us/",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The CrowdStrike must be running. Current service state is: {ActualValue}.",
+             "Description": "The CrowdStrike is not in the running state"
+          }
+       ]
+    }
+]
+}

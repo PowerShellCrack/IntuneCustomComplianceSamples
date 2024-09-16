@@ -1,0 +1,60 @@
+{
+"Rules":[
+{
+       "SettingName":"AppName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Zscaler",
+       "MoreInfoUrl":"https://help.zscaler.com/",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "Zscaler must be installed",
+             "Description": "Zscaler is not installed"
+          }
+       ]
+    },
+    {
+       "SettingName":"AppVersion",
+       "Operator":"GreaterEquals",
+       "DataType":"Version",
+       "Operand":"4.4.0.324",
+       "MoreInfoUrl":"https://help.zscaler.com/",
+       "RemediationStrings":[
+          {
+             "Language":"en_US",
+             "Title":"Zscaler version must be 4.4.0.324 or higher. Value discovered was: {ActualValue}.",
+             "Description": "Zscaler version must be 4.4.0.324 or higher. Please contact your Administrator"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"ZSAService",
+       "MoreInfoUrl":"https://help.zscaler.com/",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The Zscaler service must be installed",
+             "Description": "Zscaler is not installed or service has failed to install"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceStatus",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Running",
+       "MoreInfoUrl":"https://help.zscaler.com/",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The Zscaler must be running. Current service state is: {ActualValue}.",
+             "Description": "The Zscaler is not in the running state"
+          }
+       ]
+    }
+]
+}

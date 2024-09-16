@@ -1,0 +1,60 @@
+{
+"Rules":[
+{
+       "SettingName":"AppName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Cisco Secure Client - AnyConnect VPN",
+       "MoreInfoUrl":"https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "Cisco AnyConnect VPN must be installed",
+             "Description": "Cisco AnyConnect VPN is not installed"
+          }
+       ]
+    },
+    {
+       "SettingName":"AppVersion",
+       "Operator":"GreaterEquals",
+       "DataType":"Version",
+       "Operand":"5.1.2.42",
+       "MoreInfoUrl":"https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html",
+       "RemediationStrings":[
+          {
+             "Language":"en_US",
+             "Title":"Cisco AnyConnect VPN version must be 5.1.2.42 or higher. Value discovered was: {ActualValue}.",
+             "Description": "Cisco AnyConnect VPN version must be 5.1.2.42 or higher. Please contact your Administrator"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceName",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"csc_vpnagent",
+       "MoreInfoUrl":"https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The Cisco AnyConnect VPN service must be installed",
+             "Description": "Cisco AnyConnect VPN is not installed or service has failed to install"
+          }
+       ]
+    },
+    {
+       "SettingName":"ServiceStatus",
+       "Operator":"IsEquals",
+       "DataType":"String",
+       "Operand":"Running",
+       "MoreInfoUrl":"https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client-v4-x/model.html",
+       "RemediationStrings":[
+          {
+             "Language": "en_US",
+             "Title": "The Cisco AnyConnect VPN must be running. Current service state is: {ActualValue}.",
+             "Description": "The Cisco AnyConnect VPN is not in the running state"
+          }
+       ]
+    }
+]
+}
