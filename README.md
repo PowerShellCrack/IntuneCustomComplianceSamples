@@ -12,8 +12,7 @@ https://learn.microsoft.com/en-us/mem/intune/protect/compliance-custom-json
 
 1. Login into [Intune Admin Center](https://intune.microsoft.com)
 2. Navigate to Devices > Compliance > Scripts or  Endpoint security > Device compliance > Scripts
-2. Click Add > Windows 10 or Later. Provide a Name, description, and publisher.
-3. On Settings, add your script to Detection script. Review your script carefully. Intune doesn’t validate the script for syntax or programmatic errors.
+3. Click Add > Windows 10 or Later. Provide a Name, description, and publisher.
 4. Copy the contents of the script in the detection script settings. Then set:
     - Run this script using the logged on credentials > NO
     - Enforce script signature check > NO
