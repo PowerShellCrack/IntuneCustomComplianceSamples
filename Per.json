@@ -1,0 +1,69 @@
+{
+    "SCuBAGearPermissions": [
+            {
+                "resourceAPIAppId": "00000003-0000-0000-c000-000000000000",
+                "ProductName": "Microsoft Graph",
+                "Permission": [
+                    "RoleManagementPolicy.Read.AzureADGroup",
+                    "RoleManagement.Read.Directory",
+                    "Directory.Read.All",
+                    "User.Read.All",
+                    "GroupMember.Read.All",
+                    "PrivilegedAccess.Read.AzureADGroup",
+                    "Organization.Read.All",
+                    "Policy.Read.All",
+                    "PrivilegedEligibilitySchedule.Read.AzureADGroup"
+                    
+                ]
+            },
+            {
+                "resourceAPIAppId": "00000002-0000-0ff1-ce00-000000000000",
+                "ProductName": "Office 365 Exchange Online",
+                "Permission": [
+                    "Exchange.ManageAsApp"
+                ]
+            },
+            {
+                "resourceAPIAppId": "00000003-0000-0ff1-ce00-000000000000",
+                "ProductName": "SharePoint",
+                "Permission": [
+                    "Sites.FullControl.All"
+                ]
+            }
+        ],
+    "SCuBAGearRoles": [
+        "Global Reader"
+    ],
+    "SCuBAGearGraphScopes": [
+        {
+            "Product": "Container",
+            "Permission": [
+                "User.Read",
+                "Application.Read.All",
+                "AppRoleAssignment.ReadWrite.All",
+                "RoleManagement.ReadWrite.Directory",
+                "EntitlementManagement.ReadWrite.All"
+            ]
+        },
+        {
+            "Product": "aad",
+            "Permission": [
+                "RoleManagementPolicy.Read.AzureADGroup",
+                "RoleManagement.Read.Directory",
+                "Directory.Read.All",
+                "User.Read.All",
+                "GroupMember.Read.All",
+                "PrivilegedAccess.Read.AzureADGroup",
+                "Organization.Read.All",
+                "Policy.Read.All",
+                "PrivilegedEligibilitySchedule.Read.AzureADGroup"
+            ]
+        },
+        {
+            "Product": "exo",
+            "Permission": [
+                "User.Read.All"
+            ]
+        }
+    ]
+}
